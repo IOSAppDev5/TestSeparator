@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BagTableFooterView" customModule="SampleFooterView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Scj-sB-k45">
+                    <rect key="frame" x="0.0" y="2" width="375" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TaxLabel1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oa-hg-K6X">
+                            <rect key="frame" x="16" y="10" width="81.5" height="40"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TaxLabel2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvP-U6-Zdn">
+                            <rect key="frame" x="273" y="10" width="83.5" height="40"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.47058823529999999" green="0.51764705879999995" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="2oa-hg-K6X" secondAttribute="bottom" constant="10" id="4ck-OK-tDi"/>
+                        <constraint firstItem="2oa-hg-K6X" firstAttribute="leading" secondItem="Scj-sB-k45" secondAttribute="leading" constant="16" id="NKH-hA-8L7"/>
+                        <constraint firstItem="kvP-U6-Zdn" firstAttribute="top" secondItem="Scj-sB-k45" secondAttribute="top" constant="10" id="YFc-2G-9eN"/>
+                        <constraint firstAttribute="bottom" secondItem="kvP-U6-Zdn" secondAttribute="bottom" constant="10" id="ee3-Rn-6IK"/>
+                        <constraint firstItem="2oa-hg-K6X" firstAttribute="top" secondItem="Scj-sB-k45" secondAttribute="top" constant="10" id="gMr-lp-M7u"/>
+                        <constraint firstAttribute="trailing" secondItem="kvP-U6-Zdn" secondAttribute="trailing" constant="18.5" id="kwh-8Q-EFn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="Scj-sB-k45" secondAttribute="top" constant="-2" id="TI9-dA-aJ8"/>
+                <constraint firstItem="Scj-sB-k45" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="pbk-JE-g4A"/>
+                <constraint firstItem="Scj-sB-k45" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="tCN-zr-KJL"/>
+                <constraint firstItem="Scj-sB-k45" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="yXW-8e-bLU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="taxLeftLabel" destination="2oa-hg-K6X" id="IbK-Rp-9AM"/>
+                <outlet property="taxRightLabel" destination="kvP-U6-Zdn" id="4uR-14-1Ve"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="100.74962518740631"/>
+        </view>
+    </objects>
+</document>
